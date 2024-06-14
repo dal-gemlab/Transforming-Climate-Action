@@ -8,7 +8,8 @@ public class TapToSetAnchor : MonoBehaviour, IMixedRealityPointerHandler
 {
     public Transform ParentAnchor;
     public GameObject PlaceableObject;
-    public Vector3 offset;
+    private Vector3 PostionOffset = new Vector3(0, 0, 0);
+    private Quaternion RotationOffset = Quaternion.Euler(90, 90, 0);
 
     public void Start()
     {
@@ -61,7 +62,7 @@ public class TapToSetAnchor : MonoBehaviour, IMixedRealityPointerHandler
         //PATCH START
         var id = QRCode.GetComponent<QRCode>().qrCode.SpatialGraphNodeId;
         SpatialGraphNode.FromStaticNodeId(id).TryLocate(FrameTime.OnUpdate, out Pose pose);
-        ParentAnchor.transform.SetPositionAndRotation(pose.position + offset, pose.rotation);
+        ParentAnchor.transform.SetPositionAndRotation(pose.position + PostionOffset, pose.rotation * RotationOffset);
         PlaceableObject.SetActive(true);
 
 
