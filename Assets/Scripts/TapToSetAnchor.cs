@@ -9,7 +9,7 @@ public class TapToSetAnchor : MonoBehaviour, IMixedRealityPointerHandler
     public Transform ParentAnchor;
     public GameObject PlaceableObject;
     private Vector3 PostionOffset = new Vector3(0, 0, 0);
-    private Quaternion RotationOffset = Quaternion.Euler(90, 90, 0);
+    private Quaternion RotationOffset = Quaternion.Euler(90, 90, 90);
 
     public void Start()
     {
