@@ -12,7 +12,7 @@ output_folder="$source_dir/output"
 
 mkdir -p "$output_folder"
 
-cp -r "$source_dir"/*."$file_type" "$output_folder"
+cp -r "$source_dir"/*"$file_type" "$output_folder"
 
 echo "Copy completed."
 
