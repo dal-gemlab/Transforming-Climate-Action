@@ -3,28 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.UI;
+using TMPro;
 
 public class SeaLevelController : MonoBehaviour, IMixedRealityPointerHandler
 {
     private float riseSpeed = 0.02f;
     public GameObject seaLevel;
+    public GameObject terrain;
     private bool rised = false;
     private bool riseUp = false;
     private bool riseDown = false;
-    private float lowerBound = -0.36f;
-    private float upperBound = -0.38f;
+    private float lowerBound = 0.27f;
+    private float upperBound = 0.24f;
     private float diff;
+    public AudioSource clickSound;
+    public TextMeshProUGUI debugText;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        diff = transform.position.y - seaLevel.transform.position.y;
+        diff = terrain.transform.position.y - seaLevel.transform.position.y;
+        debugText.text = "Diff " + diff;
 
         if (diff < upperBound)
         {
@@ -58,6 +63,7 @@ public class SeaLevelController : MonoBehaviour, IMixedRealityPointerHandler
         {
             riseDown = true;
         }
+        clickSound.Play();
         Debug.Log("Clicked");
     }
 

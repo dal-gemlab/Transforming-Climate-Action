@@ -10,6 +10,8 @@ public class TapToSetAnchor : MonoBehaviour, IMixedRealityPointerHandler
     public GameObject PlaceableObject;
     private Vector3 PostionOffset = new Vector3(0, 0, 0);
     private Quaternion RotationOffset = Quaternion.Euler(90, 90, 90);
+    public GameObject seaLevel;
+    private Vector3 seaLevelPos;
 
     public void Start()
     {
@@ -63,6 +65,11 @@ public class TapToSetAnchor : MonoBehaviour, IMixedRealityPointerHandler
         var id = QRCode.GetComponent<QRCode>().qrCode.SpatialGraphNodeId;
         SpatialGraphNode.FromStaticNodeId(id).TryLocate(FrameTime.OnUpdate, out Pose pose);
         ParentAnchor.transform.SetPositionAndRotation(pose.position + PostionOffset, pose.rotation * RotationOffset);
+
+        //set the relative position of the sea level
+        seaLevelPos = seaLevel.transform.position;
+        seaLevel.transform.position = new Vector3(seaLevelPos.x, PlaceableObject.transform.position.y - 0.27f, seaLevelPos.z);
+
         PlaceableObject.SetActive(true);
 
 
