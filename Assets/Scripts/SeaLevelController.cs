@@ -7,7 +7,7 @@ using TMPro;
 
 public class SeaLevelController : MonoBehaviour, IMixedRealityPointerHandler
 {
-    private float riseSpeed = 0.02f;
+    private float riseSpeed = 0.01f;
     public GameObject seaLevel;
     public GameObject terrain;
     private bool rised = false;
