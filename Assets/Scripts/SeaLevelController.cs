@@ -13,11 +13,12 @@ public class SeaLevelController : MonoBehaviour, IMixedRealityPointerHandler
     private bool rised = false;
     private bool riseUp = false;
     private bool riseDown = false;
-    private float lowerBound = 0.27f;
+    private float lowerBound = 0.265f;
     private float upperBound = 0.24f;
     private float diff;
     public AudioSource clickSound;
     public TextMeshProUGUI debugText;
+    public TextMeshProUGUI indicator;
 
     // Start is called before the first frame update
     void Start()
@@ -41,13 +42,21 @@ public class SeaLevelController : MonoBehaviour, IMixedRealityPointerHandler
             rised = false;
             riseDown = false;
         }
-        if (!rised && riseUp)
+        if (!rised)
         {
-            seaLevelUp();
+            indicator.text = "Click the area below to observe the sea level rise";
+            if (riseUp)
+            {
+                seaLevelUp();
+            }
         }
-        if(rised && riseDown)
+        else
         {
-            seaLevelDown();
+            indicator.text = "Click the area below again to restore the sea level";
+            if (riseDown)
+            {
+                seaLevelDown();
+            }
         }
         
         

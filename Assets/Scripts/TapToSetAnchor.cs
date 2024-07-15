@@ -68,7 +68,7 @@ public class TapToSetAnchor : MonoBehaviour, IMixedRealityPointerHandler
 
         //set the relative position of the sea level
         seaLevelPos = seaLevel.transform.position;
-        seaLevel.transform.position = new Vector3(seaLevelPos.x, PlaceableObject.transform.position.y - 0.27f, seaLevelPos.z);
+        seaLevel.transform.position = new Vector3(seaLevelPos.x, PlaceableObject.transform.position.y - 0.265f, seaLevelPos.z);
 
         PlaceableObject.SetActive(true);
 
