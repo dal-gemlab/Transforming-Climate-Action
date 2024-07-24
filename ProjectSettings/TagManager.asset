@@ -9,6 +9,7 @@ TagManager:
   - CubeShip
   - NoTagText
   - DebugText
+  - seaLevel
   layers:
   - Default
   - TransparentFX

@@ -10,7 +10,7 @@ public class SeaLevelController : MonoBehaviour, IMixedRealityPointerHandler
     private float riseSpeed = 0.01f;
     public GameObject seaLevel;
     public GameObject terrain;
-    private bool rised = false;
+    public bool rised = false;
     private bool riseUp = false;
     private bool riseDown = false;
     private float lowerBound = 0.265f;
