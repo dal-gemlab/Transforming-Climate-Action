@@ -10,6 +10,10 @@ TagManager:
   - NoTagText
   - DebugText
   - seaLevel
+  - up
+  - down
+  - left
+  - right
   layers:
   - Default
   - TransparentFX

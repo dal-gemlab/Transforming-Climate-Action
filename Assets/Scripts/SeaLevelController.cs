@@ -13,8 +13,8 @@ public class SeaLevelController : MonoBehaviour, IMixedRealityPointerHandler
     public bool rised = false;
     private bool riseUp = false;
     private bool riseDown = false;
-    private float lowerBound = 0.265f;
-    private float upperBound = 0.24f;
+    private float lowerBound = 0.241f;
+    private float upperBound = 0.220f;
     private float diff;
     public AudioSource clickSound;
     public TextMeshProUGUI debugText;
