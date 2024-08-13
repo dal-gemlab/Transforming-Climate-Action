@@ -143,6 +143,8 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -4684816091552530275, guid: 511ede992db3d0644bfad6fab2a97e6b, type: 2}
   - {fileID: 6622739591437268976, guid: e406a22aadb48124ab5d76e0be6e856c, type: 2}
   metroInputSource: 0
@@ -617,7 +619,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: ClimiteAction
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: D:\Unity\Git\Transforming-Climate-Action\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
