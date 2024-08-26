@@ -1397,6 +1397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherSystem: {fileID: 809792299}
+  clouds: {fileID: 616581841}
 --- !u!114 &616581845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,7 +1768,7 @@ RectTransform:
   m_GameObject: {fileID: 731716873}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.8069999}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_Children:
   - {fileID: 1316414509}
   m_Father: {fileID: 690696154}
@@ -1775,7 +1776,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.1, y: -0.22}
+  m_AnchoredPosition: {x: 1.1, y: -0.548}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &731716875
@@ -1927,7 +1928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98300e3bc6ae0b744b0c07299ece3d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weatherSystem: {fileID: 809792299}
+  lightningGenerator: {fileID: 1589155760}
 --- !u!1001 &859909340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2498,7 +2499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 472720, guid: 79f3726e667d7254296b8aef52d0f074, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7
+      value: 1.22
       objectReference: {fileID: 0}
     - target: {fileID: 472720, guid: 79f3726e667d7254296b8aef52d0f074, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2732,7 +2733,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.63, y: 14.06}
+  m_AnchoredPosition: {x: -8.67, y: 21.05}
   m_SizeDelta: {x: 21.5, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1316414510

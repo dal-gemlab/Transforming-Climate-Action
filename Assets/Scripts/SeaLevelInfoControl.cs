@@ -8,7 +8,7 @@ public class SeaLevelInfoControl : MonoBehaviour
     public GameObject lineIndicator;
     private float moveSpeed = 0.17f;
     private float scalingSpeed = 0.004f;
-    private float duration = 1.3f;
+    private float duration = 1.0f;
     private float elapseTime = 0f;
     private Vector3 initialScale;
     private Vector3 initialPosition;

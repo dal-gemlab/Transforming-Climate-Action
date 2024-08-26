@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightningCleaner : MonoBehaviour
 {
-    public GameObject weatherSystem;
+    public GameObject lightningGenerator;
     private GameObject lightning;  
 
 
@@ -18,7 +18,7 @@ public class LightningCleaner : MonoBehaviour
     {
         lightning = GameObject.Find("LightningPrefab(Clone)");
 
-        if (!weatherSystem.activeSelf && lightning != null)
+        if (!lightningGenerator.activeSelf && lightning != null)
         {
             Destroy(lightning);
         }    
