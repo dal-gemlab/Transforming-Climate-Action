@@ -34,17 +34,17 @@ public class WeatherController : MonoBehaviour, IMixedRealityPointerHandler
 
     public void OnPointerDown(MixedRealityPointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+
     }
 
     public void OnPointerDragged(MixedRealityPointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+
     }
 
     public void OnPointerUp(MixedRealityPointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+
     }
 
 }

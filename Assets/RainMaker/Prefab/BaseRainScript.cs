@@ -150,11 +150,11 @@ namespace DigitalRuby.RainMaker
                 else
                 {
                     LoopingAudioSource newSource;
-                    if (RainIntensity >= 0.67f)
+                    if (RainIntensity >= 3.5f)
                     {
                         newSource = audioSourceRainHeavy;
                     }
-                    else if (RainIntensity >= 0.33f)
+                    else if (RainIntensity >= 2.0f)
                     {
                         newSource = audioSourceRainMedium;
                     }

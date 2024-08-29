@@ -5,6 +5,7 @@ using UnityEngine;
 public class LightningCleaner : MonoBehaviour
 {
     public GameObject lightningGenerator;
+    public GameObject weatherSystem;
     private GameObject lightning;  
 
 
@@ -18,9 +19,15 @@ public class LightningCleaner : MonoBehaviour
     {
         lightning = GameObject.Find("LightningPrefab(Clone)");
 
-        if (!lightningGenerator.activeSelf && lightning != null)
+        if( lightning != null)
+        {
+            Debug.Log("ligntning found");
+        }
+
+        if ((!lightningGenerator.activeSelf || !weatherSystem.activeSelf )&& lightning != null)
         {
             Destroy(lightning);
+            Debug.Log("Lightning destroyed");
         }    
     }
 }

@@ -620,11 +620,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: ClimiteAction
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: Assets\WSATestCertificate.pfx
+  metroCertificatePath: 
   metroCertificatePassword: 
-  metroCertificateSubject: DefaultCompany
-  metroCertificateIssuer: DefaultCompany
-  metroCertificateNotAfter: 0043bd332643d901
+  metroCertificateSubject: 
+  metroCertificateIssuer: 
+  metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: ClimateAction
   wsaImages: {}
   metroTileShortName: OpenXR_ARMapVis
